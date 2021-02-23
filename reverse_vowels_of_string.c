@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdbool.h>
 bool isvowel(char c){
     if ((c == 'A' || c == 'a') ||(c == 'E' || c == 'e') ||(c == 'I' || c == 'i') ||(c == 'O' || c == 'o') ||(c == 'U' || c == 'u')){
 		return true;
@@ -26,11 +27,12 @@ char * reverseVowels(char * s){
 			j--;
 		}
 	}
-	return s;
+	printf("%s",s);
 }
 int main()
 {
-    char input[10];
-    scanf("%s",input);
-    return 0;
+	char input[10];
+	scanf("%s",input);
+    	reverseVowels(input);
+   	return 0;
 }
