@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include <stdbool.h>
+#include <string.h>
+#include <stdlib.h>
 bool isValid(char * s){
     int n=strlen(s);
     char *stack = malloc(n);
@@ -33,4 +37,11 @@ bool isValid(char * s){
     }
     
     return top == 0;
+}
+int main()
+{
+    char input[10];
+    scanf("%s",input);
+    isValid(input);
+    return 0;
 }
