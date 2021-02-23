@@ -36,7 +36,11 @@ bool isValid(char * s){
         }
     }
     
-    return top == 0;
+    if(top==0){
+        printf("true");
+    }
+    else
+        printf("false");
 }
 int main()
 {
