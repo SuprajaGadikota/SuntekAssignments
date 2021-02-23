@@ -1,5 +1,4 @@
-#include<stdio.h>
-int main() {
+
 int search(int* nums, int numsSize, int target){
     int mid,low,high;
     low =0;
@@ -25,5 +24,4 @@ int search(int* nums, int numsSize, int target){
         }
     }
     return -1;
-}
 }
