@@ -1,5 +1,4 @@
-#include<stdio.h>
-int main() {
+
 int maxProduct(int* nums, int numsSize){
     int max = nums[0],product;
     for (int i=0;i<numsSize;i++) {
@@ -16,4 +15,3 @@ int maxProduct(int* nums, int numsSize){
     }
     return max;
    }
-}
