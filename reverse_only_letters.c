@@ -20,7 +20,7 @@ char * reverseOnlyLetters(char * S){
 			j--;
 		}
 	}
-	return S;
+	printf("%s",S);
 }
 int main()
 {
