@@ -1,4 +1,4 @@
-
+#include <stdio.h>
 int search(int* nums, int numsSize, int target){
     int mid,low,high;
     low =0;
@@ -24,4 +24,23 @@ int search(int* nums, int numsSize, int target){
         }
     }
     return -1;
+}
+int main(){
+    int n,arr[50],pivot,target;
+    scanf("%d",&n);
+    for(int i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+    scanf("%d",&pivot);
+    scanf("%d",&target);
+    if(pivot>0 && pivot<7){
+        for(int i=pivot;i<=n-1;i++){
+            printf("%d\t",arr[i]);
+        }
+        for(int i=0;i<=pivot-1;i++){
+            printf("%d\t",arr[i]);
+        }
+    }
+    int index=search(arr,n,target);
+    printf("%d",index);
 }
